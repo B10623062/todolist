@@ -1,0 +1,33 @@
+<template>
+  <div class="navbar">
+    <v-app-bar
+      class="d-flex justify-center"
+      flat
+    >
+      <v-btn
+        text
+        class="mx-2"
+        router
+        to="/all"
+      >
+        <span>全部</span>
+      </v-btn>
+      <v-btn
+        text
+        class="mx-2"
+        router
+        to="/active"
+      >
+        <span>未完成</span>
+      </v-btn>
+      <v-btn
+        text
+        class="mx-2"
+        router
+        to="/complete"
+      >
+        <span>已完成</span>
+      </v-btn>
+    </v-app-bar>
+  </div>
+</template>
