@@ -55,7 +55,9 @@ export default new Vuex.Store({
       LS.save(state.todos)
     },
     UPDATE_TODO (state, { index, data }) {
-      state.todos[index] = data
+      state.todos[index].content = data.content
+      state.todos[index].complete = data.complete
+
       LS.save(state.todos)
     },
     REMOVE_TODO (state, index) {
